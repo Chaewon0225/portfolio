@@ -54,11 +54,58 @@
 							<p>We won the <b>3rd place</b> at the IBSTPI Instructor Resources Competition in 2024. <a href="https://ibstpi.org/2024/05/10/congratulations-to-our-1st-2nd-and-3rd-place-winners/">View the announcement here.</a></p>
 							<b>Collaborators</b>: <a href="https://www.linkedin.com/in/alexjamesbarrett/">Alex Barrett</a>, <a href="https://meme.create.fsu.edu/jaesung-hur/">Jaesung Hur</a>, <a href="https://nursing.fsu.edu/faculty-staff/veronica-brewer">Veronica Brewer</a></p>
 							<p><b>Mentor</b>: <a href="https://annescollege.fsu.edu/faculty-staff/dr-kadir-kozan">Kadir Kozan, Ph.D.</a></p>
-							<p>I led a team of doctoral colleagues in instructional design for the IBSTPI project. For this competition, we designed resources for instructional designers to familiarize with IBSTPI competencies. The final product can be viewed <a href="https://rise.articulate.com/share/RXjJzqC3varFj1hElcq0xEc6-S_kubzD"><b>here.</b></a></p>
+							<p>I led a team of doctoral colleagues in instructional design for the IBSTPI project. For this competition, we designed resources for instructional designers to familiarize with IBSTPI competencies. The final product can be viewed <a href="https://rise.articulate.com/share/RXjJzqC3varFj1hElcq0xEc6-S_kubzD"><b>here.</b></a> Below are the infographics we created as part of this project.</p>
+    <!-- Carousel starts here -->
+    <div class="carousel">
+      <div class="slides">
+        <img src="images/Slide1.jpg" alt="1">
+        <img src="images/Slide2.jpg" alt="2">
+        <img src="images/Slide3.jpg" alt="3">
+        <img src="images/Slide4.jpg" alt="4">
+        <img src="images/Slide5.jpg" alt="5">
+        <img src="images/Slide6.jpg" alt="6">
+        <img src="images/Slide7.jpg" alt="7">
+      </div>
+    </div>
+    <!-- Carousel ends here -->
 							<span class="image main"><img src="images/desserts.jpg" alt="The dessert we had with the money we won from the IBSTPI competition" style="width:50%; height:auto;"></span>
 							<p>We won about $400 from the competition, which we spent together for a nice dinner at a local restaurant. The food was so good that the only photo we remembered to take was the desserts.</p>
 						</div>
 					</div>
+
+<style>
+  .carousel {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+  }
+
+  .slides {
+    display: flex;
+    width: 700%; /* 7 images */
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .slides img {
+    width: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+  }
+</style>
+
+<script>
+  const slides = document.querySelector('.slides');
+  const total = slides.children.length;
+  let index = 0;
+
+  setInterval(() => {
+    index = (index + 1) % total;
+    slides.style.transform = `translateX(-${index * 100}%)`;
+  }, 3000); // Change slide every 3 seconds
+</script>
 
 				<!-- Footer -->
 					<footer id="footer">
